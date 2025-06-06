@@ -1,7 +1,7 @@
 import { FaUser, FaPhoneAlt } from "react-icons/fa";
 import css from "./Contact.module.css";
 import { useDispatch } from "react-redux";
-import { deleteContact } from "../../redux/contactsOps";
+import { deleteContact } from "../../redux/contacts/operations";
 
 function formatNumber(number) {
   const digits = number.replace(/\D/g, "").slice(0, 10);
