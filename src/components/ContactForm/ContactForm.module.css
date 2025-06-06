@@ -1,0 +1,42 @@
+.form {
+  padding: 8px;
+  border: 1px solid #111111;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  width: 208px;
+}
+
+.formItem {
+  margin-bottom: 8px;
+}
+
+.label {
+  display: block;
+}
+
+.field {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 4px;
+  border: 1px solid grey;
+  border-radius: 2px;
+}
+.field:focus {
+  border-color: blue;
+  outline: none;
+}
+.error {
+  font-size: 12px;
+  color: red;
+}
+
+.btn {
+  display: block;
+  margin: 0 auto;
+}
+.btn:hover {
+  background-color: cornflowerblue;
+  border-color: blue;
+  border-radius: 4px;
+}
