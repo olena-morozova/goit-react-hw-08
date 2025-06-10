@@ -1,4 +1,4 @@
-.wrapper {
+/*.wrapper {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -6,4 +6,31 @@
 
 .username {
   font-weight: 700;
+}
+*/
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+.username {
+  font-weight: 600;
+}
+
+button {
+  background-color: #e53935;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #b71c1c;
 }

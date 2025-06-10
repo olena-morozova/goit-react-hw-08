@@ -1,4 +1,4 @@
-.link {
+/*.link {
   display: inline-block;
   text-decoration: none;
   padding: 12px;
@@ -8,4 +8,16 @@
 
 .link.active {
   color: #e84a5f;
+}*/
+.link {
+  margin-left: 1.5rem;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.link:hover,
+.link.active {
+  color: #ffcc00;
 }

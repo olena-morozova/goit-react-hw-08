@@ -2,13 +2,20 @@ import { Formik, Form, Field } from "formik";
 import css from "./RegistrationForm.module.css";
 import { useDispatch } from "react-redux";
 import { register } from "../../redux/auth/operations";
+import { useNavigate } from "react-router-dom";
 
 export default function RegistrationForm() {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
-  const handleSubmit = (values, actions) => {
-    dispatch(register(values));
-    actions.resetForm();
+  const handleSubmit = async (values, actions) => {
+    try {
+      await dispatch(register(values)).unwrap();
+      navigate("/contacts");
+      actions.resetForm();
+    } catch (error) {
+      console.error("Registration error:", error);
+    }
   };
 
   return (

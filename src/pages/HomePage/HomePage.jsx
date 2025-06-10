@@ -4,12 +4,13 @@ export default function HomePage() {
   return (
     <div className={css.container}>
       <h1 className={css.title}>Welcome to the Phonebook App</h1>
-      <p className={css.text}>Please register or log in to continue.</p>
     </div>
   );
 }
 
 /*
+<p className={css.text}>Please register or log in to continue.</p>
+
 const styles = {
   container: {
     minHeight: "calc(100vh - 50px)",
