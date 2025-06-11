@@ -9,8 +9,3 @@ const PrivateRoute = ({ component: Component, redirectTo = "/" }) => {
 };
 
 export default PrivateRoute;
-
-/**
- * - If the route is private and the user is logged in, render the component
- * - Otherwise render <Navigate> to redirectTo
- */
